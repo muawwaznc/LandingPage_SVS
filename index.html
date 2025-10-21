@@ -11,23 +11,34 @@
     <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <style>
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 10000;
+        }
+
+        body {
+            padding-top: 80px;
+        }
+
         nav {
             display: flex;
             gap: 20px;
             align-items: center;
-            z-index: 99999;
         }
 
         nav a {
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
-            cursor: pointer !important;
+            cursor: pointer;
         }
 
         nav a:hover {
             color: #014a94;
-            cursor: pointer;
         }
     </style>
 </head>
